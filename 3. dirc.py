@@ -33,9 +33,44 @@ jipsonmurillo = {
 }
 
 
-print(jipsonmurillo.keys())
-print(jipsonmurillo.values())
-print(jipsonmurillo.get("code"))
+print(jipsonmurillo.keys()) #return the keys
+print(jipsonmurillo.values()) #return the values
+print(jipsonmurillo.get("code")) #return the values
 
 for key, val in jipsonmurillo.items():
     print(key)
+
+#The fromkeys() method returns a dictionary with the specified keys and the specified value.
+x = ('key1', 'key2', 'key3')
+y = 0
+thisdict = dict.fromkeys(x, y)
+print(thisdict)
+
+#The items() method returns a view object. The view object contains the key-value pairs of the dictionary, as tuples in a list.
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+x = car.items()
+print(x)
+
+#The pop() method removes the specified item from the dictionary.
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+car.pop("model")
+print(car)
+
+#The update() method inserts the specified items to the dictionary.
+car = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+car.update({"color": "White"})
+print(car)
+car["uno"]=1 #shot format the assign value to dict 
+print(car)
