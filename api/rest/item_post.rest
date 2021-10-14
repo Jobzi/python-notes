@@ -1,0 +1,21 @@
+GET http://127.0.0.1:8000/items HTTP/1.1
+content-type: application/json
+
+#####
+POST  http://127.0.0.1:8000/items HTTP/1.1
+content-type: application/json
+
+{
+    "name": "NUEVO ITEM",
+    "price": 4562
+}
+
+#####
+PUT http://127.0.0.1:8000/items/1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "SAMPLE",
+    "price": 4562
+}
+
