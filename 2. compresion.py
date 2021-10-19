@@ -13,3 +13,7 @@ filter(fn, list)                 # .filter, returns iterator
 """
 result = [x for x in pares if x==2]
 print(result)
+
+c = {'name': 'Pooka', 'first_name': 'Oooka'}
+result= ["{}:{}".format(k.upper(), v.upper()) for k, v in c.items()]
+print(result)
