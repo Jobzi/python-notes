@@ -23,3 +23,12 @@ def fullName(a:str,b:str)->str:
 
 print("Tengo una Suma de dos Numeros",suma(5,8))
 print("Hola Soy:",fullName("Jipson"," Murillo"))
+
+import typing
+number_or_string = typing.NewType('number_or_string', typing.Union[int, str])
+
+hola: typing.List[number_or_string] = [1, 2, 3]
+print(hola)
+
+hello2: number_or_string = [True]
+print(hello2)
