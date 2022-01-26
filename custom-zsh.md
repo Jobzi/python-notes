@@ -30,7 +30,7 @@ NOTE: elements in zsh arrays are separated by whitespace (spaces, tabs, newlines
 
 2. Add the plugin to the list of plugins for Oh My Zsh to load (inside `~/.zshrc`):
 
-    ```sh
+    ```zsh
     plugins=( 
         # other plugins...
         zsh-autosuggestions
@@ -50,7 +50,32 @@ NOTE: elements in zsh arrays are separated by whitespace (spaces, tabs, newlines
 2. Activate the plugin in `~/.zshrc`:
 
     ```zsh
-    plugins=( [plugins...] zsh-syntax-highlighting)
+    plugins=( 
+        # other plugins...
+        zsh-autosuggestions
+    )
     ```
 
 3. Restart zsh (such as by opening a new instance of your terminal emulator).
+
+#### Top Plugins Here:
+- [Plugins - OhMyZsh](https://safjan.com/top-popular-zsh-plugins-on-github/)
+
+# Favourite Zsh features
+### Help with Git
+   
+> Everyone has their favourite aliases for git commands. oh-my-zsh has a bunch out of the box too.
+![Help with Git](https://code.joejag.com/assets/2014/git_aliases.jpg)
+
+### Tab completion on ‘cd’
+
+>In Bash when you press `<TAB>` you get prompted with a list of files in the current directory. In the context of the cd command this isn’t particularly useful, as you can only go into directories. Zsh knows this and only shows you the possible valid destinations.
+![Tab completion](https://code.joejag.com/assets/2014/cd_after.jpg)
+### shorthand ‘ls’
+>You don’t have to type whole directory names, just type the first few letters enough to make it unique and Zsh will work the rest out.
+![shorthand](https://code.joejag.com/assets/2014/ls_shorthand_before.jpg)
+>Hey presto!
+![shorthand-after](https://code.joejag.com/assets/2014/ls_shorthand_after.jpg)
+
+#### See More Features Here 
+- [Features](https://code.joejag.com/2014/why-zsh.html)
